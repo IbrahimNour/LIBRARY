@@ -1,0 +1,26 @@
+@mixin landingPage-theme() {
+  app-landing-page {
+    .landing-page {
+      padding: 20px 40px;
+      h1 {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+    }
+
+    .book {
+      padding: 30px 20px;
+      border: 1px solid $border-color;
+      border-radius: 5px;
+      margin-bottom: 5px;
+      &__details {
+        &__logo {
+          cursor: pointer;
+          img {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

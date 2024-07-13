@@ -1,0 +1,37 @@
+@mixin auther-details-theme() {
+  app-auther-details {
+    .auther-details {
+      &__image {
+        h1 {
+          padding: 20px 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      &__description {
+        padding: 20px 0;
+        p {
+          margin-bottom: 10px;
+        }
+        &__topics {
+          padding: 40px 0;
+          p {
+            font-size: 16px;
+          }
+
+          ul {
+            list-style: none;
+            li {
+              border: 1px solid $border-color;
+              padding: 5px;
+              border-radius: 20px;
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+@mixin book-details-theme() {
+  app-book-details {
+    .book-details {
+      &__image {
+        h1 {
+          padding: 20px 0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+
+      &__description {
+        padding: 20px 0;
+        ul {
+          margin-top: 2rem;
+          margin-left: 2rem;
+          li {
+            margin-bottom: 10px;
+          }
+        }
+
+        button {
+          background-color: transparent;
+          border: 1px solid $border-color;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

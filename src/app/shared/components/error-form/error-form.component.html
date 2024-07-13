@@ -1,0 +1,44 @@
+<span *ngIf="control && control.touched">
+  <mat-error
+    class="error-message top-02"
+    *ngIf="control.errors?.['required']"
+    [ngClass]="{'show': control.errors?.['required']}"
+    >{{ name | translate }} {{ "REQUIRED" | translate }} !</mat-error
+  >
+
+  <mat-error class="error-message" *ngIf="control.errors?.['minlength']">
+    {{ name | translate }} {{ "REQUIRED_MIN_LENGTH" | translate }}
+    {{ minLength }} !</mat-error
+  >
+
+  <mat-error class="error-message" *ngIf="control.errors?.['maxlength']">
+    {{ name | translate }} must not be more than {{ maxLength }} !</mat-error
+  >
+
+  <mat-error class="error-message" *ngIf="control.errors?.['email']">
+    {{ "VALID_EMAIL" | translate }} !</mat-error
+  >
+
+  <mat-error
+    class="error-message"
+    *ngIf="name === 'password' && !control.value?.match('^(?=.*[A-Z])')"
+    >At least oneu ppercase letter.</mat-error
+  >
+  <mat-error
+    class="error-message"
+    *ngIf="name === 'password' && !control?.value?.match('(?=.*[a-z])')"
+    >At least one lowercase letter.</mat-error
+  >
+
+  <mat-error
+    class="error-message"
+    *ngIf="name === 'password' && !control?.value?.match('(.*[0-9].*)')"
+    >At least one digit.</mat-error
+  >
+
+  <mat-error
+    class="error-message"
+    *ngIf="name === 'password' && !control?.value?.match('(?=.*[!@#$%^&*])')"
+    >At least one special character.</mat-error
+  >
+</span>

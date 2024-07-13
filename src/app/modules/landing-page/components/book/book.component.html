@@ -1,0 +1,41 @@
+<section class="book" fxLayout="column" fxLayoutAlign="start stretch">
+  <div
+    class="book__details"
+    fxLayout="row wrap"
+    fxLayoutAlign="start start"
+    fxLayoutGap="10"
+  >
+    <div
+      class="book__details__logo"
+      fxFlex.lt-lg="100"
+      fxFlex.gt-md="30"
+      routerLink="/book/2"
+    >
+      <img
+        src="assets/images/book-composition-with-open-book_23-2147690555.avif"
+        alt=""
+        title="book name"
+      />
+    </div>
+
+    <div
+      class="book__details__description"
+      fxFlex.lt-lg="100"
+      fxFlex.gt-md="65"
+    >
+      <p>2017</p>
+      <h2 routerLink="/book/2" class="ptr">Book Title</h2>
+      <span routerLink="/auther/2">Ibrahim Nour</span>
+    </div>
+  </div>
+
+  <div
+    class="book__actions"
+    fxLayout="row"
+    fxLayoutAlign="end end"
+    fxLayoutGap="5"
+  >
+    <a routerLink="/book/2">More</a>
+    <a>Whishlist</a>
+  </div>
+</section>

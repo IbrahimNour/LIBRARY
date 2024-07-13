@@ -1,0 +1,23 @@
+@mixin header-theme() {
+  app-header {
+    header {
+      img {
+        width: 100px;
+        object-fit: cover;
+      }
+      ul {
+        list-style: none;
+        li {
+          cursor: pointer;
+          a {
+            transition: all 0.5s;
+            color: $main-color;
+            &:hover {
+              color: $dark-gray;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+$main-color: #252525;
+$black-cb: #333333;
+$white-color: #fff;
+$span-color: #737882;
+$dark-gray: #666666;
+$red-color: #de4141;
+$border-color: #e6e6e6;
+$gray-color: #eeeeee;
+$green-color: #60be7a;
+$white-green: #bbe4e3;
+
+@import "./spineer.scss";
+@import "../../app/shared/components/header/header.component.scss";
+@import "../../app/modules/landing-page/landing-page-theme.scss";
+@import "../../app/modules/book-details/book-details-theme.scss";
+@import "../../app/modules/auther-details/auther-details-theme.scss";
+
+@mixin component-theme() {
+  @include header-theme();
+  @include landingPage-theme();
+  @include book-details-theme();
+  @include auther-details-theme();
+}
+
+@include component-theme();
